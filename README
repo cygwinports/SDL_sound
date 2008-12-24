@@ -1,0 +1,93 @@
+SDL_sound
+------------------------------------------
+SDL_sound is a library that handles the decoding of several popular
+sound file formats, such as .WAV and .MP3. It is meant to make the
+programmer's sound playback tasks simpler. The programmer gives
+SDL_sound a filename, or feeds it data directly from one of many
+sources, and then reads the decoded waveform data back at her leisure.
+If resource constraints are a concern, SDL_sound can process sound data
+in programmer-specified blocks. Alternately, SDL_sound can decode a
+whole sound file and hand back a single pointer to the whole waveform.
+SDL_sound can also handle sample rate, audio format, and channel
+conversion on-the-fly and behind-the-scenes, if the programmer desires.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libFLAC8-1.2.1-1
+  libmikmod2-3.1.12-1
+  libmodplug0-0.8.4-2
+  libogg0-1.1.3-1
+  libSDL1.2_0-1.2.13-2
+  libsmpeg0.4_0-0.4.4-5
+  libspeex1-1.2rc1-1
+  libvorbisfile3-1.2.0-1
+
+Build requirements:
+(besides corresponding devel packages)
+  autoconf2.5-2.63-1
+  automake1.5-1.5-3
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.icculus.org/SDL_sound/
+
+Canonical download:
+  http://www.icculus.org/SDL_sound/downloads/
+
+-------------------------------------------
+
+Build instructions:
+  unpack SDL_sound-1.0.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./SDL_sound-1.0.3-X.cygport all
+
+This will create:
+  /usr/src/SDL_sound-1.0.3-X-src.tar.bz2
+  /usr/src/libSDL_sound-devel-1.0.3-X.tar.bz2
+  /usr/src/libSDL_sound1.0_1-1.0.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libSDL_sound1.0_1)
+  /usr/bin/cygSDL_sound-1-0-1.dll
+  /usr/share/doc/SDL_sound-1.0.3/CHANGELOG
+  /usr/share/doc/SDL_sound-1.0.3/COPYING
+  /usr/share/doc/SDL_sound-1.0.3/CREDITS
+  /usr/share/doc/SDL_sound-1.0.3/INSTALL
+  /usr/share/doc/SDL_sound-1.0.3/README
+  /usr/share/doc/SDL_sound-1.0.3/TODO
+
+(libSDL_sound-devel)
+  /usr/include/SDL/SDL_sound.h
+  /usr/lib/libSDL_sound.a
+  /usr/lib/libSDL_sound.dll.a
+  /usr/lib/libSDL_sound.la
+
+------------------
+
+Port Notes:
+
+----- version 1.0.3-1 -----
+Version bump.
+
+----- version 1.0.1-2 -----
+Rebuilt for updated dependencies.
+Included Gentoo patch for the new FLAC API.
+
+----- version 1.0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
