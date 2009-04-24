@@ -12,13 +12,13 @@ SDL_sound can also handle sample rate, audio format, and channel
 conversion on-the-fly and behind-the-scenes, if the programmer desires.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-45
   libFLAC8-1.2.1-1
-  libmikmod2-3.1.12-1
-  libmodplug0-0.8.4-2
+  libmikmod2-3.1.12-10
+  libmodplug0-0.8.4-10
   libogg0-1.1.3-1
-  libSDL1.2_0-1.2.13-2
-  libsmpeg0.4_0-0.4.4-5
+  libSDL1.2_0-1.2.13-10
+  libsmpeg0.4_0-0.4.4-10
   libspeex1-1.2rc1-1
   libvorbisfile3-1.2.0-1
 
@@ -61,12 +61,11 @@ Files included in the binary packages:
 
 (libSDL_sound1.0_1)
   /usr/bin/cygSDL_sound-1-0-1.dll
-  /usr/share/doc/SDL_sound-1.0.3/CHANGELOG
-  /usr/share/doc/SDL_sound-1.0.3/COPYING
-  /usr/share/doc/SDL_sound-1.0.3/CREDITS
-  /usr/share/doc/SDL_sound-1.0.3/INSTALL
-  /usr/share/doc/SDL_sound-1.0.3/README
-  /usr/share/doc/SDL_sound-1.0.3/TODO
+  /usr/share/doc/SDL_sound/CHANGELOG
+  /usr/share/doc/SDL_sound/COPYING
+  /usr/share/doc/SDL_sound/CREDITS
+  /usr/share/doc/SDL_sound/README
+  /usr/share/doc/SDL_sound/TODO
 
 (libSDL_sound-devel)
   /usr/include/SDL/SDL_sound.h
@@ -78,15 +77,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 1.0.3-1 -----
-Version bump.
-
------ version 1.0.1-2 -----
-Rebuilt for updated dependencies.
-Included Gentoo patch for the new FLAC API.
-
------ version 1.0.1-1 -----
-Initial release for Cygwin.
+----- version 1.0.3-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

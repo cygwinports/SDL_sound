@@ -8,9 +8,6 @@ libSDL_sound1_0_1_CONTENTS='usr/bin/*-1-0-1.dll usr/share/doc/'
 libSDL_sound_devel_CONTENTS='usr/include/ usr/lib/'
 PKG_IGNORE="usr/bin/*.exe"
 
-# CHANGELOG vs. ChangeLog
-USE_MANAGED_MOUNT=1
-
 DISTCLEANFILES="acinclude.m4"
 NO_AUTOHEADER=1
 CPPFLAGS+=" -I/usr/include/smpeg"

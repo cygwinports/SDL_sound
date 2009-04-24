@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libSDL_sound1.0_1 libFLAC-devel libmikmod-devel libmodplug libogg-devel libSDL-devel libsmpeg-devel speex-devel libvorbis-devel 
+requires: cygwin libSDL_sound1.0_1 libFLAC-devel libmikmod-devel libmodplug-devel libogg-devel libSDL-devel libsmpeg-devel speex-devel libvorbis-devel
 external-source: SDL_sound
 sdesc: "SDL sound file decoding library (runtime)"
 ldesc: "SDL_sound is a library that handles the decoding of several popular
