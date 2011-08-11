@@ -3,7 +3,7 @@ HOMEPAGE="http://icculus.org/SDL_sound/"
 SRC_URI="http://icculus.org/SDL_sound/downloads/${P}.tar.gz"
 PATCH_URI="1.0.1-no-undefined.patch"
 
-PKG_NAMES="${PN} lib${PN}1.0_1 lib${PN}-devel"
+PKG_NAMES="lib${PN}1.0_1 lib${PN}-devel"
 libSDL_sound1_0_1_CONTENTS='usr/bin/*-1-0-1.dll usr/share/doc/'
 libSDL_sound_devel_CONTENTS='usr/include/ usr/lib/'
 PKG_IGNORE="usr/bin/*.exe"
