@@ -7,7 +7,8 @@ DESCRIPTION="SDL_sound is a library that handles the decoding of several
 popular sound file formats. It is meant to make the programmer's sound
 playback tasks simpler."
 HOMEPAGE="http://icculus.org/SDL_sound/"
-SRC_URI="http://icculus.org/SDL_sound/downloads/${NAME}-${VERSION}.tar.gz"
+#SRC_URI="http://icculus.org/SDL_sound/downloads/${NAME}-${VERSION}.tar.gz"
+SRC_URI="http://pkgs.fedoraproject.org/repo/pkgs/SDL_sound/SDL_sound-${VERSION}.tar.gz/34d057f4a0cb9bbd267a4e7e050d5a03/SDL_sound-${VERSION}.tar.gz"
 PATCH_URI="1.0.1-no-undefined.patch"
 
 PKG_NAMES="lib${NAME}1.0_1 lib${NAME}-devel"
@@ -17,16 +18,15 @@ PKG_IGNORE="usr/bin/*.exe"
 
 DISTCLEANFILES="acinclude.m4"
 NO_AUTOHEADER=1
-CPPFLAGS+=" -I/usr/include/smpeg"
 
 CYGCONF_ARGS="
 	--enable-flac
 	--enable-midi
 	--enable-mikmod
 	--enable-modplug
-	--enable-mpglib
+	--disable-mpglib
 	--enable-ogg
-	--enable-smpeg
+	--disable-smpeg
 	--enable-speex
 "
 
