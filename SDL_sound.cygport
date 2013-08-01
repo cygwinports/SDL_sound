@@ -1,9 +1,16 @@
-DESCRIPTION="Simple DirectMedia Layer soundfile decoder library"
+NAME="SDL_sound"
+VERSION=1.0.3
+RELEASE=12
+CATEGORY="Libs"
+SUMMARY="SDL sound file decoding library"
+DESCRIPTION="SDL_sound is a library that handles the decoding of several
+popular sound file formats. It is meant to make the programmer's sound
+playback tasks simpler."
 HOMEPAGE="http://icculus.org/SDL_sound/"
-SRC_URI="http://icculus.org/SDL_sound/downloads/${P}.tar.gz"
+SRC_URI="http://icculus.org/SDL_sound/downloads/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="1.0.1-no-undefined.patch"
 
-PKG_NAMES="lib${PN}1.0_1 lib${PN}-devel"
+PKG_NAMES="lib${NAME}1.0_1 lib${NAME}-devel"
 libSDL_sound1_0_1_CONTENTS='usr/bin/*-1-0-1.dll usr/share/doc/'
 libSDL_sound_devel_CONTENTS='usr/include/ usr/lib/'
 PKG_IGNORE="usr/bin/*.exe"
@@ -22,3 +29,5 @@ CYGCONF_ARGS="
 	--enable-smpeg
 	--enable-speex
 "
+
+KEEP_LA_FILES="none"
